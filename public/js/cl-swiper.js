@@ -1,15 +1,13 @@
 const swiper = new Swiper(".swiper", {
-  effect: "fade",
-
-  slidesPerView: 1,
   loop: true,
-
+  effect: "fade", // フェード切り替え
+  // 自動再生
   autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
+    delay: 4000, // 4秒後に次のスライドへ
+    disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
   },
-
-  // ページネーション（ドット）
+  speed: 4000,
+  // ページネーション
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

@@ -1,8 +1,49 @@
 @use "../global" as *;
 
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
 .p-main__swiper {
   .swiper {
-    width: 100%;
     height: rclamp(667, 1820, 375, 1023);
   }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+  }
+
+  // スライド内の画像要素も、サイズを強制的に固定
+  .p-main__fv--image {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .p-main__fv--image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  // チラ見せ（FOUC）防止策
+  .swiper:not(.swiper-initialized) .swiper-wrapper {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.swiper-slide-active .swiper-img,
+.swiper-slide-duplicate-active .swiper-img,
+.swiper-slide-prev .swiper-img,
+.swiper-slide .p-main__fv--image {
+  animation: zoomUp 7s linear 0s normal both;
 }
