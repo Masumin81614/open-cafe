@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+  color: $font-color;
+  background: $base-color-thin;
+  font-weight: 400;
+}

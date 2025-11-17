@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.p-main__swiper {
+  .swiper {
+    width: 100%;
+    height: rclamp(667, 1820, 375, 1023);
+  }
+}

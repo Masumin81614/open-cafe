@@ -1,0 +1,48 @@
+@use "../global" as *;
+
+.p-main-menu__inner {
+  display: flex;
+}
+
+.p-main-menu__left {
+  @include mq(sp-middle) {
+    display: none;
+  }
+
+  @include mq(tb-middle) {
+    padding-block: rclamp(8, 15, 1024, 1920);
+  }
+}
+
+.p-main-menu__logo {
+  color: transparent;
+}
+
+.p-main-menu__lists {
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(17, 32, 1024, 1920);
+}
+
+.p-main-menu__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-main-menu__en,
+.p-main-menu__ja {
+  color: $font-color;
+  text-align: center;
+}
+
+.p-main-menu__en {
+  font-size: rclamp(9, 16, 1024, 1920);
+  font-weight: 400;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.p-main-menu__ja {
+  font-size: rclamp(5, 10, 1024, 1920);
+  font-weight: 500;
+}

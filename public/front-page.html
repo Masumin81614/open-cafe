@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="Open Cafeは、手作り料理と厳選されたコーヒーを楽しめるカフェで、訪れる人々にリラックスした時間を提供しています。心地よい空間でのんびりとしたひとときを過ごせるよう、内装にもこだわり、美しいガーデニングが特徴です。" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Damion&family=Noto+Sans+JP:wght@100..900&family=Patua+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="modules/effect-fade/effect-fade.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Open Cafe - dish & coffee -</title>
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header">
+        <div class="l-header-menu__logo--item">
+          <a href="#" class="l-header__logo"><img src="./img/logo_light.svg" alt="OPEN CAFEロゴ" width="120" height="65" loading="lazy" /> </a>
+        </div>
+        <div class="l-header__inner">
+          <div class="l-header-menu__logo--box">
+            <a href="#" class="l-header-menu__logo"><img src="./img/logo_light.svg" alt="OPEN CAFEロゴ" width="120" height="65" loading="lazy" /> </a>
+          </div>
+          <nav class="l-header__nav" aria-label="SPメインメニュー">
+            <ul class="l-header__lists">
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">top</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">トップ</span>
+                </a>
+              </li>
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">concept</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">コンセプト</span>
+                </a>
+              </li>
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">menu</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">メニュー</span>
+                </a>
+              </li>
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">news</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">お知らせ</span>
+                </a>
+              </li>
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">shop</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">店舗情報</span>
+                </a>
+              </li>
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">giFt</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">ギフト・贈り物</span>
+                </a>
+              </li>
+              <li class="l-header__list">
+                <a href="#" class="p-header__link">
+                  <span class="l-header__menu menu--en">contact</span>
+                  <span>／</span>
+                  <span class="l-header__menu menu--ja">お問い合わせ</span>
+                </a>
+              </li>
+            </ul>
+            <div class="p-sns__linkbox">
+              <a href="#" target="_blank" class="p-sns__link" aria-label="SNSへ移動する">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" target="_blank" class="p-sns__link" aria-label="SNSへ移動する">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="p-sns__link" aria-label="SNSへ移動する">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="l-header__menu--btn">
+          <button class="c-menu__icon" aria-label="メニューを開く">
+            <span class="c-menu__icon--bar">
+              <span class="c-menu__icon--txt">メニュー開閉</span>
+            </span>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="l-main__fv">
+          <div class="p-main-menu">
+            <div class="p-main-menu__inner">
+              <div class="p-main-menu__left">
+                <h1 class="p-main-menu__logo">
+                  <img src="./img/logo.svg" alt="OPENCAFE" width="170" height="90" loading="lazy" />
+                  Open Cafe - dish & coffee -
+                </h1>
+                <nav class="p-main-menu__nav" aria-label="PCメインメニュー">
+                  <ul class="p-main-menu__lists">
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">top</span>
+                        <span class="p-main-menu__ja menu--ja">トップ</span>
+                      </a>
+                    </li>
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">concept</span>
+                        <span class="p-main-menu__ja menu--ja">コンセプト</span>
+                      </a>
+                    </li>
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">menu</span>
+                        <span class="p-main-menu__ja menu--ja">メニュー</span>
+                      </a>
+                    </li>
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">news</span>
+                        <span class="p-main-menu__ja menu--ja">お知らせ</span>
+                      </a>
+                    </li>
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">shop</span>
+                        <span class="p-main-menu__ja menu--ja">店舗情報</span>
+                      </a>
+                    </li>
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">giFt</span>
+                        <span class="p-main-menu__ja menu--ja">ギフト・贈り物</span>
+                      </a>
+                    </li>
+                    <li class="p-main-menu__list">
+                      <a href="#" class="p-main-menu__link">
+                        <span class="p-main-menu__en menu--en">contact</span>
+                        <span class="p-main-menu__ja menu--ja">お問い合わせ</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="p-sns__linkbox">
+                  <a href="#" target="_blank" class="p-sns__link">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" class="p-sns__link">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" class="p-sns__link">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="p-main-menu__right">
+                <div class="p-main__swiper">
+                  <!-- Slider main container -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <picture class="p-main__fv--image">
+                          <source media="(min-width: 768px)" srcset="./img/img_mainvisual1.webp" />
+                          <img src="./img/img_mainvisual1_sp.webp" alt="パンとコーヒー" width="750" height="1334" loading="lazy" />
+                        </picture>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <picture class="p-main__fv--image">
+                          <source media="(min-width: 768px)" srcset="./img/img_mainvisual2.webp" />
+                          <img src="./img/img_mainvisual2_sp.webp" alt="色鮮やかなカフェ" width="750" height="1334" loading="lazy" />
+                        </picture>
+                      </div>
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <picture class="p-main__fv--image">
+                          <source media="(min-width: 768px)" srcset="./img/img_mainvisual3.webp" />
+                          <img src="./img/img_mainvisual3_sp.webp" alt="コーヒーを飲む女性" width="750" height="1334" loading="lazy" />
+                        </picture>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                  <div class="p-main__fv--textbox">
+                    <p class="p-main__fv--text">
+                      パスタとコーヒーがとってもおいしい、<br />
+                      ほっと落ち着くのんびり空間。
+                    </p>
+                  </div>
+                  <div class="l-pickup__news">
+                    <a href="#" class="p-pickup__news">
+                      <p class="p-pickup__tag c-tag">期間限定メニュー</p>
+                      <div class="p-pickup__news--image">
+                        <img src="./img/img_mv-1.webp" alt="ホットチョコレート" width="240" height="240" loading="lazy" />
+                      </div>
+                      <div class="p-pickup__news--contents">
+                        <time class="p-pickup__news--time">2024.12.17</time>
+                        <h3 class="p-pickup__news--heading">冬だけの特別メニュー！ホットチョコレートのご紹介</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="l-concept__front p-concept__front">
+          <div class="l-inner">
+            <div class="p-concept__front--body">
+              <div class="p-concept__front--head">
+                <h2 class="c-section__title--en">CONCEPT</h2>
+                <p class="c-section__title--ja">当店のこだわり</p>
+              </div>
+              <h3 class="p-concept__subtitle">
+                最高のコーヒーと、<br />
+                時の流れを味わうことができる<br />
+                手作りカフェ
+              </h3>
+              <div class="p-concept__front--text">
+                <p>自家焙煎の新鮮な豆から丁寧に抽出したコーヒーが奏でる香りと味わいを、温もり溢れる手作りの店内で堪能していただける当店。ゆったりと流れる時間のなかで、雑味のないクリアな味をじっくりと味わえば、慌ただしい日常を忘れ、心ほどけるひとときをお過ごしいただけます。</p>
+                <p>訪れるたびに心満たされる特別な余韻は、ここでしか味わえない最上のくつろぎです。それは、忙しさに追われる日常をそっと解きほぐす、至福の瞬間でもあります。</p>
+              </div>
+              <div class="p-concept__front--button">
+                <a href="" class="c-find__btn">
+                  <span class="c-find__btn--text">詳しくはこちら</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="p-concept__front--image">
+              <img src="./img/img_concept__image.webp" alt="コーヒーとカフェオレなどの画像" width="1200" height="1528" loading="lazy" />
+            </div>
+          </div>
+        </section>
+        <section class="l-lunch__front p-lunch__front">
+          <div class="p-lunch__front--balloon">
+            <img src="./img/img_balloon-special-lunch-set.webp" alt="パスタ、サラダ、ドリンクのお得なセット☆" width="617" height="322" loading="lazy" />
+          </div>
+          <div class="p-lunch__front--inner l-inner">
+            <div class="p-lunch__front--head">
+              <h2 class="c-section__title--en">SPECIAL LUNCH SET</h2>
+              <p class="c-section__title--ja">今月のスペシャルランチセット</p>
+            </div>
+            <div class="p-lunch__menu--block">
+              <h3 class="c-heading__riboon--main">お好きなパスタをお選びください</h3>
+            </div>
+            <div class="p-lunch__menu--lineup">
+              <div class="lunch__box">
+                <div class="lunch__box--thumbnail">
+                  <img src="./img/img_pasta1.webp" alt="オリーブとトマトのペペロンチーノ" width="980" height="980" loading="lazy" />
+                </div>
+                <div class="lunch__box--head">
+                  <p class="lunch__box--num">A</p>
+                  <p class="lunch__box--title">オリーブとトマトのペペロンチーノ</p>
+                </div>
+              </div>
+              <div class="lunch__box">
+                <div class="lunch__box--thumbnail">
+                  <img src="./img/img_pasta2.webp" alt="カニクリームパスタ" width="980" height="980" loading="lazy" />
+                </div>
+                <div class="lunch__box--head">
+                  <p class="lunch__box--num">B</p>
+                  <p class="lunch__box--title">カニクリームパスタ</p>
+                </div>
+              </div>
+              <div class="lunch__box">
+                <div class="lunch__box--thumbnail">
+                  <img src="./img/img_pasta.webp" alt="シーフードパスタ" width="980" height="980" loading="lazy" />
+                </div>
+                <div class="lunch__box--head">
+                  <p class="lunch__box--num">C</p>
+                  <p class="lunch__box--title">シーフードパスタ</p>
+                </div>
+              </div>
+              <div class="lunch__box">
+                <div class="lunch__box--thumbnail">
+                  <img src="./img/img_pasta3.webp" alt="バジルチキンパスタ" width="980" height="980" loading="lazy" />
+                </div>
+                <div class="lunch__box--head">
+                  <p class="lunch__box--num">D</p>
+                  <p class="lunch__box--title">バジルチキンパスタ</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-lunch__front--special">
+              <picture class="p-lunch__special--thumbnail">
+                <source media="(min-width: 768px)" srcset="./img/img_set-menu__detail-pc.webp" />
+                <img src="./img/img_set-menu__detail-sp.webp" alt="パスタとサラダとドリンクの画像" width="670" height="197" loading="lazy" />
+              </picture>
+              <div class="lunch__front--description">
+                <p class="lunch__front--title">
+                  スペシャルランチセット <br />
+                  【選べる3品】
+                </p>
+                <p class="lunch__front--price">1,280 yen</p>
+                <p class="lunch__front--openDate">(11:00 AM〜14:00 PMまで)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="l-grand p-grand">
+          <div class="l-top__menu--grand"></div>
+          <div class="l-grand__inner l-inner">
+            <div class="p-grand__head">
+              <h2 class="c-section__title--en">GRAND MENU</h2>
+              <p class="c-section__title--ja">グランドメニュー</p>
+            </div>
+            <div class="p-grand__menus">
+              <div class="p-grand__block">
+                <h3 class="c-heading__double--line">パスタ</h3>
+                <div class="p-grand__list">
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_pasta1.webp" alt="オリーブとトマトのペペロンチーノ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">オリーブとトマトのペペロンチーノ</p>
+                    <p class="p-grand__price">900<span class="p-grand__yen">yen</span></p>
+                  </div>
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_pasta2.webp" alt="シーフードパスタ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">シーフードパスタ</p>
+                    <p class="p-grand__price">1200<span class="p-grand__yen">yen</span></p>
+                  </div>
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_pasta3.webp" alt="カルボナーラ風パスタ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">カルボナーラ風パスタ</p>
+                    <p class="p-grand__price">800<span class="p-grand__yen">yen</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-grand__block">
+                <h3 class="c-heading__double--line">サラダ</h3>
+                <div class="p-grand__list">
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_salad1.webp" alt="シーフードサラダ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">シーフードサラダ</p>
+                    <p class="p-grand__price">780<span class="p-grand__yen">yen</span></p>
+                  </div>
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_salad2.webp" alt="チキンサラダ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">チキンサラダ</p>
+                    <p class="p-grand__price">800<span class="p-grand__yen">yen</span></p>
+                  </div>
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_salad3.webp" alt="グリーンサラダ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">グリーンサラダ</p>
+                    <p class="p-grand__price">500<span class="p-grand__yen">yen</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-grand__block">
+                <h3 class="c-heading__double--line">パン&スイーツ</h3>
+                <div class="p-grand__list">
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_sweets1.webp" alt="チョコマカロン" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">チョコマカロン</p>
+                    <p class="p-grand__price"><span class="p-grand__yen">yen</span></p>
+                  </div>
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_sweets2.webp" alt="チョコクロ" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">チョコクロ</p>
+                    <p class="p-grand__price"><span class="p-grand__yen">yen</span></p>
+                  </div>
+                  <div class="p-grand__box">
+                    <div class="p-grand__thumbnail">
+                      <img src="./img/img_sweets3.webp" alt="ホワイトチョコサンド" width="980" height="980" loading="lazy" />
+                    </div>
+                    <p class="p-grand__menu">ホワイトチョコサンド</p>
+                    <p class="p-grand__price"><span class="p-grand__yen">yen</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-grand__block">
+                <h3 class="c-heading__double--line">ドリンク</h3>
+                <h4 class="c-heading__drink--menu">コーヒー</h4>
+                <div class="p-menu-drink__box">
+                  <div class="p-menu-drink__image">
+                    <img src="" alt="" width="" height="" loading="lazy" />
+                  </div>
+                  <ul class="p-drink__listbox">
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">ブレンド</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">カフェラテ</p>
+                      <p class="p-drink__item--price">
+                        500
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">豆乳ラテ</p>
+                      <p class="p-drink__item--price">
+                        500
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">カフェモカ</p>
+                      <p class="p-drink__item--price">
+                        500
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">キャラメルラテ</p>
+                      <p class="p-drink__item--price">
+                        600
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">バニララテ</p>
+                      <p class="p-drink__item--price">
+                        600
+                        <span>yen</span>
+                      </p>
+                    </li>
+                  </ul>
+                  <h4 class="c-heading__drink--menu">紅茶</h4>
+                  <ul class="p-drink__listbox">
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">ストレートティー</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">アップルティー</p>
+                      <p class="p-drink__item--price">
+                        500
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">ミルクティー</p>
+                      <p class="p-drink__item--price">
+                        500
+                        <span>yen</span>
+                      </p>
+                    </li>
+                  </ul>
+                  <h4 class="c-heading__drink--menu">ソフトドリンク</h4>
+                  <ul class="p-drink__listbox">
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">バナナジュース</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">オレンジジュース</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">アップルジュース</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">マンゴージュース</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                    <li class="p-drink__item">
+                      <p class="p-drink__item--name">ミックスジュース</p>
+                      <p class="p-drink__item--price">
+                        400
+                        <span>yen</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-grand__button">
+                  <a href="" class="c-find__btn">
+                    <span class="c-find__btn--text">詳しくはこちら</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="l-instagram p-instagram">
+          <div class="p-instagram__balloon">
+            <img src="./img/img_balloon-gallery.webp" alt="インスタグラムも毎日投稿してます！" width="532" height="276" loading="lazy" />
+          </div>
+          <div class="p-instagram__head">
+            <h2 class="c-section__title--en">GALLERY</h2>
+            <p class="c-section__title--ja">ギャラリー</p>
+          </div>
+          <ul class="p-instagram__list">
+            <li class="p-instagram__item">
+              <img src="./img/img_gallery1.webp" alt="ギャラリー1" width="514" height="514" loading="lazy" />
+            </li>
+            <li class="p-instagram__item">
+              <img src="./img/img_gallery2.webp" alt="ギャラリー2" width="514" height="514" loading="lazy" />
+            </li>
+            <li class="p-instagram__item">
+              <img src="./img/img_gallery3.webp" alt="ギャラリー3" width="514" height="514" loading="lazy" />
+            </li>
+            <li class="p-instagram__item">
+              <img src="./img/img_gallery4.webp" alt="ギャラリー4" width="514" height="514" loading="lazy" />
+            </li>
+          </ul>
+          <div class="p-instagram__button">
+            <a href="" class="c-find__btn">
+              <span class="c-find__btn--text">インスタグラムを見る</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </section>
+        <section class="l-news-front p-news-front">
+          <div class="l-inner">
+            <div class="p-news-front__contents">
+              <div class="p-news-front__head">
+                <h2 class="c-section__title--en">NEWS</h2>
+                <p class="c-section__title--ja">お知らせ</p>
+              </div>
+              <div class="p-news-front__block">
+                <a href="" class="p-news-front__card-large">
+                  <p class="p-news-front--tag c-tag c-tag__large">
+                    <span class="c-tag__text">期間限定メニュー</span>
+                  </p>
+                  <div class="p-news-front__thumbnail">
+                    <img src="./img/img_thumbnail-6.webp" alt="サムネイル" width="1023" height="638" loading="lazy" />
+                  </div>
+                  <div class="p-news-front__body">
+                    <h3 class="news-front__large--title">冬だけの特別メニュー！ホットチョコレートのご紹介</h3>
+                    <p class="news-front--text">この冬限定のスペシャルドリンク 寒い季節にぴったりの特別メニューとして、当店オリジナルのホットチョコレートが新登場しました。ほどよい甘さと濃厚なカカオのコクが絶妙にマッチし、寒い外から飛び込んできた身体を芯から温めてくれます。</p>
+                    <time class="p-news-front__date">2024.12.17</time>
+                  </div>
+                </a>
+                <a href="" class="p-news-front__card">
+                  <p class="p-news-front--tag c-tag c-tag__large">
+                    <span class="c-tag__text">営業時間</span>
+                  </p>
+                  <div class="p-news-front__thumbnail">
+                    <img src="./img/img_default-thumbnail.webp" alt="サムネイル" width="530" height="333" loading="lazy" />
+                  </div>
+                  <div class="p-news-front__body">
+                    <h3 class="p-news-front__large--title">年末年始の営業時間についてのお知らせ</h3>
+                    <time class="p-news-front__date">2024.12.10</time>
+                  </div>
+                </a>
+                <a href="" class="p-news-front__card">
+                  <p class="p-news-front--tag c-tag c-tag__large">
+                    <span class="c-tag__text">キャンペーン</span>
+                  </p>
+                  <div class="p-news-front__thumbnail">
+                    <img src="./img/img_default-thumbnail.webp" alt="サムネイル" width="530" height="333" loading="lazy" />
+                  </div>
+                  <div class="p-news-front__body">
+                    <h3 class="p-news-front__large--title">友達を紹介してお得に楽しもう！スタンプカードが2倍押されるスペシャルイベント開催中、カフェタイムがさらにお得に！今すぐお友達と一緒に来店して、特典をゲットしよう！</h3>
+                    <time class="p-news-front__date">2024.12.01</time>
+                  </div>
+                </a>
+                <a href="" class="p-news-front__card">
+                  <p class="p-news-front--tag c-tag c-tag__large">
+                    <span class="c-tag__text">イベント情報</span>
+                  </p>
+                  <div class="p-news-front__thumbnail">
+                    <img src="./img/img_thumbnail-5.webp" alt="サムネイル" width="530" height="333" loading="lazy" />
+                  </div>
+                  <div class="p-news-front__body">
+                    <h3 class="p-news-front__large--title">ハロウィンパーティー開催！仮装でご来店の方にドリンクサービス</h3>
+                    <time class="p-news-front__date">2024.10.01</time>
+                  </div>
+                </a>
+                <a href="" class="p-news-front__card">
+                  <p class="p-news-front--tag c-tag c-tag__large">
+                    <span class="c-tag__text">期間限定メニュー</span>
+                  </p>
+                  <div class="p-news-front__thumbnail">
+                    <img src="./img/img_thumbnail-8.webp" alt="サムネイル" width="530" height="333" loading="lazy" />
+                  </div>
+                  <div class="p-news-front__body">
+                    <h3 class="p-news-front__large--title">秋限定！栗とカボチャのほっこりスイーツメニュー</h3>
+                    <time class="p-news-front__date">2024.09.18</time>
+                  </div>
+                </a>
+              </div>
+              <div class="p-news-front--button">
+                <a href="" class="c-find__btn">
+                  <span class="c-find__btn--text">過去のお知らせ</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="l-access-front p-access-front">
+          <div class="p-access-front__balloon">
+            <img src="./img/img_balloon-access.webp" alt="吉祥寺駅から徒歩5分！" width="466" height="401" loading="lazy" />
+          </div>
+          <div class="l-inner">
+            <div class="p-access-front__head">
+              <h2 class="c-section__title--en">access</h2>
+              <p class="c-section__title--ja">アクセス</p>
+            </div>
+            <div class="p-access-front__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9671045033783!2d139.5771012346265!3d35.70242710551365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee39b555205f%3A0xabb26a0a2fbda595!2z44CSMTgwLTAwMDMg5p2x5Lqs6YO95q2m6JS16YeO5biC5ZCJ56Wl5a-65Y2X55S677yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1762784340847!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="p-access-front__contents">
+              <dl class="p-access-front__row">
+                <dt class="p-access-front--title">住所</dt>
+                <dd class="p-access-front__detail">
+                  〒000-0000 <br />
+                  東京都武蔵野市吉祥寺南町一丁目
+                </dd>
+              </dl>
+              <dl class="p-access-front__row">
+                <dt class="p-access-front--title">営業時間</dt>
+                <dd class="p-access-front__detail">
+                  7:00〜21:00 <br />
+                  ※ラストオーダー 20:30
+                </dd>
+              </dl>
+              <dl class="p-access-front__row">
+                <dt class="p-access-front--title">TEL</dt>
+                <dd class="p-access-front__detail">0123-456-789</dd>
+              </dl>
+              <dl class="p-access-front__row">
+                <dt class="p-access-front--title">定休日</dt>
+                <dd class="p-access-front__detail">水曜日</dd>
+              </dl>
+              <dl class="p-access-front__row">
+                <dt class="p-access-front--title">Mail</dt>
+                <dd class="p-access-front__detail">example@mail.com</dd>
+              </dl>
+              <dl class="p-access-front__row">
+                <dt class="p-access-front--title">座席</dt>
+                <dd class="p-access-front__detail">テーブル20席 ／ カウンター席6席</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <div class="p-footer-pagetop">
+            <a href="#" class="p-footer-pagetop__link" aria-label="ページトップへ戻る">
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+          </div>
+          <div class="l-footer__snslist">
+            <div class="l-footer__snsitem">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="l-footer__snsitem">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="l-footer__snsitem">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <small class="l-footer__copylight">©︎2000-2021 open cafe. All Rights Reserved.</small>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/cl-swiper.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

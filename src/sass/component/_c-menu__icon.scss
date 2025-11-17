@@ -1,0 +1,51 @@
+@use "../global" as *;
+
+.c-menu__icon {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  background-color: #382620;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+  transition: background 0.3s, top 0.3s;
+}
+
+.c-menu__icon--bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 27px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+  transition: background 0.3s, top 0.3s;
+  transform: translate(-50%, -50%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #fff;
+    transform: translateX(-50%);
+    transform-origin: center;
+  }
+
+  &::before {
+    top: -7px;
+  }
+  &::after {
+    top: 7px;
+  }
+}
+
+.c-menu__icon--txt {
+  display: inline-block;
+  color: transparent;
+  height: 10px;
+}

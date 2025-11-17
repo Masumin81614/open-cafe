@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+.p-sns__linkbox {
+  display: flex;
+  justify-content: center;
+  gap: rclamp(24, 65, 375, 1023);
+
+  @include mq(tb-middle) {
+    margin-top: rclamp(34, 63, 1024, 1920);
+    gap: rclamp(13, 24, 1024, 1920);
+  }
+}
+
+.p-sns__link {
+  width: rclamp(18, 49, 375, 1023);
+  height: rclamp(18, 49, 375, 1023);
+
+  @include mq(tb-middle) {
+    width: rclamp(13, 24, 1024, 1920);
+    height: rclamp(13, 24, 1024, 1920);
+  }
+
+  i {
+    color: $white;
+
+    @include mq(tb-middle) {
+      color: $font-color;
+    }
+  }
+}

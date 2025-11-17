@@ -1,0 +1,119 @@
+@use "../global" as *;
+
+.l-header {
+  display: block;
+
+  &.is-drawerActive {
+    .l-header__nav {
+      display: block;
+    }
+  }
+  @include mq(tb-middle) {
+    display: none;
+  }
+}
+
+.l-header__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  background: $main-color;
+
+  &.is-drawerActive {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.l-header-menu__logo--item {
+  position: absolute;
+  z-index: 2;
+  padding: rclamp(10, 27, 375, 1023);
+  width: 100%;
+}
+
+.l-header__logo {
+  width: rclamp(120, 327, 375, 1023);
+  display: flex;
+  align-items: center;
+  min-height: rclamp(65, 177, 375, 1023);
+}
+
+.l-header__nav {
+  padding-inline: rclamp(40, 109, 375, 1023);
+  padding-bottom: rclamp(50, 136, 375, 1023);
+}
+
+.l-header__lists {
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(25, 68, 375, 1023);
+  padding-block: rclamp(50, 136, 375, 1023);
+}
+
+.p-header__link {
+  color: $white;
+}
+.l-header__menu {
+  &.menu--en {
+    font-size: rclamp(24, 65, 375, 1023);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2.88px;
+  }
+
+  &.menu--ja {
+    font-size: rclamp(10, 27, 375, 1023);
+    font-weight: 500;
+  }
+}
+
+.l-header-menu__logo--box {
+  display: flex;
+  padding: rclamp(10, 27, 375, 1023);
+}
+
+.l-header-menu__logo {
+  max-width: rclamp(120, 327, 375, 1023) img {
+    width: 100%;
+  }
+}
+
+.menu--en {
+  font-family: "Patua One";
+}
+
+.l-header__menu--btn {
+  position: fixed;
+  top: rclamp(10, 27, 375, 1023);
+  right: rclamp(10, 27, 375, 1023);
+  z-index: 100;
+
+  &.is-drawerActive {
+    .c-menu__icon {
+      background-color: $white;
+    }
+
+    .c-menu__icon--bar {
+      &::before,
+      &::after {
+        background-color: $font-color;
+      }
+
+      &::before {
+        rotate: 45deg;
+        translate: -4px 15.5px;
+      }
+      &::after {
+        rotate: -45deg;
+        translate: -4px -17.5px;
+      }
+    }
+  }
+}
