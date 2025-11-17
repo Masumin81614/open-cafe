@@ -1,0 +1,61 @@
+@use "../global" as *;
+
+.l-pickup__news {
+  background: rgba(255, 255, 255, 0.85);
+  margin: rclamp(20, 55, 375, 1023);
+  position: absolute;
+  bottom: rclamp(32, 87, 375, 1023);
+  z-index: 3;
+}
+
+.p-pickup__news {
+  display: flex;
+  gap: rclamp(16, 44, 375, 1023);
+  padding: rclamp(12, 33, 375, 1023);
+  position: relative;
+}
+
+.p-pickup__tag {
+  position: absolute;
+  left: rclamp(-8, -22, 375, 1023);
+  top: rclamp(8, 22, 375, 1023);
+}
+
+.p-pickup__news--image {
+  width: rclamp(100, 273, 375, 1023);
+  height: rclamp(100, 273, 375, 1023);
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+
+  img {
+    height: auto;
+  }
+}
+
+.p-pickup__news--contents {
+  color: $font-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-pickup__fukidashi {
+  position: absolute;
+  top: rclamp(-43, -117, 375, 1023);
+  right: 0;
+  width: rclamp(120, 327, 375, 1023);
+}
+
+.p-pickup__news--time,
+.p-pickup__news--heading {
+  font-family: "Noto Serif", serif;
+  font-size: rclamp(12, 33, 375, 1023);
+}
+
+.p-pickup__news--time {
+  font-weight: 500;
+}
+
+.p-pickup__news--heading {
+  font-weight: 700;
+}

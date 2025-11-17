@@ -1,0 +1,38 @@
+@use "../global" as *;
+
+.c-find__btn {
+  background: $black-color;
+  padding-block: rclamp(24, 65, 375, 1023);
+  padding-inline: rclamp(22, 60, 375, 1023);
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: rclamp(6, 16, 375, 1023);
+    left: rclamp(6, 16, 375, 1023);
+    border-bottom: 1px solid $black-color;
+    border-right: 1px solid $black-color;
+  }
+}
+.fa-chevron-right {
+  color: $white;
+  position: absolute;
+  right: rclamp(26, 71, 375, 1023);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-find__btn--text {
+  text-align: center;
+  font-size: rclamp(16, 44, 375, 1023);
+  font-weight: 700;
+  color: $white;
+}

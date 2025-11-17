@@ -1,0 +1,66 @@
+@use "../global" as *;
+
+.l-concept__front {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: rclamp(-20, -55, 375, 1023);
+    background: url(../img/bg_coffee-deco.webp) left top no-repeat;
+    background-size: 100% auto;
+    width: rclamp(145, 396, 375, 1023);
+    height: 100%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $base-color-heavy;
+    width: calc(100% - 20px);
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    z-index: 1;
+  }
+}
+
+.p-concept__front--body {
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(40, 109, 375, 1023);
+}
+
+.p-concept__subtitle {
+  font-size: rclamp(20, 55, 375, 1023);
+  font-weight: 700;
+  line-height: 2;
+}
+
+.p-concept__front--text {
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(14, 38, 375, 1023);
+  font-size: rclamp(14, 38, 375, 1023);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.p-concept__front--button {
+  max-width: rclamp(290, 791, 375, 1023);
+}
+
+.p-concept__front--image {
+  margin-top: rclamp(60, 164, 375, 1023);
+  width: rclamp(315, 859, 375, 1023);
+  height: rclamp(401, 1094, 375, 1023);
+  aspect-ratio: 315/401;
+  position: relative;
+  z-index: 2;
+
+  img {
+    height: auto;
+  }
+}

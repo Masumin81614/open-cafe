@@ -18,10 +18,8 @@
   .swiper-slide {
     width: 100% !important;
     height: 100% !important;
-    transform: none !important;
   }
 
-  // スライド内の画像要素も、サイズを強制的に固定
   .p-main__fv--image {
     display: block;
     width: 100% !important;
@@ -34,10 +32,21 @@
     object-fit: cover;
   }
 
-  // チラ見せ（FOUC）防止策
   .swiper:not(.swiper-initialized) .swiper-wrapper {
     visibility: hidden;
     opacity: 0;
+  }
+
+  .swiper-pagination {
+    width: 20% !important;
+  }
+
+  .swiper-pagination-bullet {
+    background: #d59b71 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $white !important;
   }
 }
 

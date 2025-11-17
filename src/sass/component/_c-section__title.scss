@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.c-section__title--en {
+  font-family: "Amatic SC";
+  font-size: rclamp(40, 109, 375, 1023);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.c-section__title--ja {
+  font-size: rclamp(12, 33, 375, 1023);
+  font-weight: 700;
+}

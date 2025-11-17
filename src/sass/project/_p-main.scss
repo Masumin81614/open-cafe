@@ -46,3 +46,23 @@
   font-size: rclamp(5, 10, 1024, 1920);
   font-weight: 500;
 }
+
+.p-main-menu__right {
+  position: relative;
+}
+
+.p-main__fv--textbox {
+  position: absolute;
+  top: rclamp(124, 338, 375, 1023);
+  left: rclamp(20, 55, 375, 1023);
+  z-index: 2;
+}
+
+.p-main__fv--text {
+  font-size: rclamp(16, 44, 375, 1023);
+  color: $white;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 2.24px;
+  font-family: "Noto Serif", serif;
+}

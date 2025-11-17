@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.l-wrapper {
+  background-color: $base-color-thin;
+}
+
+.l-top {
+  padding-block: rclamp(60, 164, 375, 1023);
+}
+
+.l-inner {
+  padding-inline: rclamp(20, 55, 375, 1023);
+}

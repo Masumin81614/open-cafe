@@ -1,0 +1,44 @@
+@use "../global" as *;
+
+.c-tag__ribbon {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  background: $main-color;
+  color: #fff;
+
+  // --- 可変にするための設定 ---
+  $ribbon-height: rclamp(30, 40, 375, 1023);
+  $ribbon-height-half: rclamp(15, 20, 375, 1023);
+  $v-cut-depth: rclamp(8, 10, 375, 1023);
+  $ribbon-font-size: rclamp(14, 16, 375, 1023);
+
+  height: $ribbon-height;
+  line-height: $ribbon-height;
+  font-size: $ribbon-font-size;
+  padding-inline: rclamp(10, 27, 375, 1023);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-width: $ribbon-height-half $v-cut-depth $ribbon-height-half 0px;
+
+    border-color: transparent $white transparent transparent; // 背景色に合わせる
+    border-style: solid;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 4px transparent;
+    border-right: solid 8px rgb(149, 158, 155);
+  }
+}
