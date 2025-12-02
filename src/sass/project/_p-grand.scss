@@ -1,0 +1,61 @@
+@use "../global" as *;
+
+.l-grand {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: rclamp(-30, -82, 375, 1023);
+    bottom: rclamp(-100, -273, 375, 1023);
+    width: rclamp(168, 458, 375, 1023);
+    height: rclamp(143, 390, 375, 1023);
+    content: "";
+    background: url(../img/bg_coffee_beans.webp) left top no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.p-grand {
+  &::before {
+    content: "";
+    position: absolute;
+    left: rclamp(-30, -82, 375, 1023);
+    top: rclamp(-44, -120, 375, 1023);
+    background: url(../img/bg_coffee-leaves2.webp) left top no-repeat;
+    background-size: 100% auto;
+    width: rclamp(128, 349, 375, 1023);
+    height: rclamp(275, 750, 375, 1023);
+  }
+}
+
+.p-grand__menus {
+  margin-top: rclamp(40, 109, 375, 1023);
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(40, 109, 375, 1023);
+}
+
+.p-grand__box {
+  margin-top: rclamp(20, 55, 375, 1023);
+}
+
+.p-grand__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rclamp(20, 55, 375, 1023);
+}
+
+.p-grand__thumbnail {
+  background: $white;
+  padding: rclamp(5, 14, 375, 1023);
+}
+
+.p-grand__menu {
+  font-weight: 700;
+  font-size: rclamp(14, 38, 375, 1023);
+}
+
+.p-grand__price {
+  font-family: Damion;
+  font-size: rclamp(24, 65, 375, 1023);
+}

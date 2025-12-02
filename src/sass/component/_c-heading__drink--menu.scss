@@ -1,0 +1,7 @@
+@use "../global" as *;
+
+.c-heading__drink--menu {
+  padding-bottom: rclamp(6, 16, 375, 1023);
+  margin-top: rclamp(20, 55, 375, 1023);
+  border-bottom: 2px solid $font-color;
+}

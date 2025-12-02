@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+.c-heading__double--line {
+  position: relative;
+  padding: 4px 10px;
+  border-top: 2px solid $font-color;
+  border-bottom: 2px solid $font-color;
+  width: 100%;
+  font-size: rclamp(20, 55, 375, 1023);
+  font-weight: 700;
+  line-height: 1.5;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    width: 100%;
+    background-color: $font-color;
+  }
+
+  &::before {
+    top: 2px;
+  }
+
+  &::after {
+    bottom: rclamp(2, 5, 375, 1023);
+  }
+}

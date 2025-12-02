@@ -11,3 +11,23 @@
 .l-inner {
   padding-inline: rclamp(20, 55, 375, 1023);
 }
+
+.l-before__wall {
+  position: relative;
+  z-index: 1;
+}
+
+.l-before__wall {
+  position: relative;
+}
+
+.l-top__menu--bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  width: 73.0666666667%;
+  height: 53.9283252929%;
+  background-color: #eae0d5;
+}

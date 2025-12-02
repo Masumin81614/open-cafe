@@ -92,7 +92,7 @@
 .l-header__menu--btn {
   position: fixed;
   top: rclamp(10, 27, 375, 1023);
-  right: rclamp(10, 27, 375, 1023);
+  right: rclamp(45, 123, 375, 1023);
   z-index: 100;
 
   &.is-drawerActive {

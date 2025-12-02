@@ -1,0 +1,74 @@
+@use "../global" as *;
+
+.c-heading__riboon--main {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: rclamp(10, 27, 375, 1023);
+  font-size: rclamp(14, 38, 375, 1023);
+  color: #fff;
+  background: $black-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 15px #222; /*左の折り返し部分*/
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    right: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-left: solid 15px #222; /*右の折り返し部分*/
+  }
+}
+
+.c-lunch__menu--ribbon {
+  display: inline-block;
+  position: relative;
+  height: rclamp(37, 101, 375, 1023);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding-inline: rclamp(10, 27, 375, 1023);
+  padding-block: rclamp(4, 11, 375, 1023);
+  font-size: rclamp(14, 38, 375, 1023);
+  left: 50%;
+  transform: translateX(-50%);
+  background: $black-color;
+  color: #fff;
+  z-index: 2;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rclamp(31, 85, 375, 1023);
+    bottom: -10px;
+    left: -35px;
+    z-index: -1;
+    border: 20px solid #222;
+    border-left-color: transparent; /*山形に切り抜き*/
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rclamp(31, 85, 375, 1023);
+    bottom: -10px;
+    right: -35px;
+    z-index: -1;
+    border: 20px solid #222;
+    border-right-color: transparent; /*山形に切り抜き*/
+  }
+}

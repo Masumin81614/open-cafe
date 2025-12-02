@@ -1,0 +1,72 @@
+@use "../global" as *;
+
+.l-access-front {
+  position: relative;
+  z-index: 1;
+  padding-block: 80px;
+  background: $base-color-heavy;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: -93px;
+    background: url(../img/bg_bread.webp) left top / contain no-repeat;
+    width: 194px;
+    height: 179px;
+  }
+}
+
+.p-access-front__balloon {
+  position: absolute;
+  top: -44px;
+  left: -32px;
+  width: 170.899px;
+  height: 129.844px;
+  transform: rotate(-15.981deg);
+}
+
+.p-access-map {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.p-access-front__map {
+  position: relative;
+  aspect-ratio: 335 / 184;
+  border: 5px solid #fff;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.p-access-front__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.p-access-front__row {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid $black-color;
+  color: $black-color;
+  padding-bottom: 6px;
+}
+
+.p-access-front--title,
+.p-access-front__detail {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.p-access-front--title {
+  width: 56px;
+}

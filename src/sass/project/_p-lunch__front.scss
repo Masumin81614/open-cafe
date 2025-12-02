@@ -2,8 +2,6 @@
 
 .p-lunch__front {
   margin-top: rclamp(120, 327, 375, 1023);
-  position: relative;
-  z-index: 1;
 
   &::before {
     content: "";
@@ -45,68 +43,86 @@
   background-color: $base-color-heavy;
 }
 
-.p-lunch__front--head {
-  text-align: center;
+.p-lunch__menu--box {
+  position: relative;
+  margin-top: rclamp(60, 164, 375, 1023);
+  background: $white;
+  padding-inline: rclamp(20, 55, 375, 1023);
+  padding-top: rclamp(40, 109, 375, 1023);
+  padding-bottom: rclamp(20, 55, 375, 1023);
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(20, 55, 375, 1023);
+  z-index: 2;
 }
 
-.p-lunch__menu--block {
-  display: inline-block;
-  position: relative;
-  height: rclamp(37, 101, 375, 1023);
-  text-align: center;
-  box-sizing: border-box;
+.p-lunch__menu--ribon {
+  position: absolute;
+  top: rclamp(-28, -76, 375, 1023);
   left: 50%;
   transform: translateX(-50%);
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: rclamp(31, 85, 375, 1023);
-    bottom: -10px;
-    left: -35px;
-    z-index: 0;
-    border: 20px solid #222;
-    border-left-color: transparent; /*山形に切り抜き*/
-  }
+.p-lunch__menu--lineup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rclamp(20, 55, 375, 1023);
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: rclamp(31, 85, 375, 1023);
-    bottom: -10px;
-    right: -35px;
-    z-index: 0;
-    border: 20px solid #222;
-    border-right-color: transparent; /*山形に切り抜き*/
+  @include mq(tb-middle) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.c-heading__riboon--main {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  padding: rclamp(10, 27, 375, 1023);
+.lunch__box {
+  display: flex;
+  flex-direction: column;
+  gap: rclamp(16, 44, 375, 1023);
+}
+
+.lunch__box--thumbnail {
+  width: 100%;
+  height: rclamp(158, 431, 375, 1023);
+  aspect-ratio: 1/1;
+}
+
+.lunch__box--head {
+  display: flex;
+  gap: rclamp(6, 16, 375, 1023);
+  align-items: center;
+}
+
+.lunch__box--num {
+  width: rclamp(24, 65, 375, 1023);
+  height: rclamp(24, 65, 375, 1023);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $font-color;
+  color: $white;
+  padding-inline: rclamp(2.5, 7, 375, 1023);
+  padding-block: rclamp(5.5, 15, 375, 1023);
+}
+
+.lunch__box--title {
   font-size: rclamp(14, 38, 375, 1023);
-  color: #fff;
-  background: $black-color;
+  font-weight: 700;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 100%;
-    left: 0;
-    border: none;
-    border-bottom: solid 10px transparent;
-    border-right: solid 15px #222; /*左の折り返し部分*/
-  }
+.lunch__front--description {
+  text-align: center;
+}
+.lunch__front--title {
+  font-size: rclamp(16, 44, 375, 1023);
+  font-weight: 700;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 100%;
-    right: 0;
-    border: none;
-    border-bottom: solid 10px transparent;
-    border-left: solid 15px #222; /*右の折り返し部分*/
-  }
+.lunch__front--price {
+  font-family: Damion;
+  font-size: rclamp(40, 109, 375, 1023);
+}
+
+.lunch__front--openDate {
+  font-size: rclamp(12, 33, 375, 1023);
+  font-weight: 700;
 }
